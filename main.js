@@ -2,6 +2,7 @@ const soustraction = document.getElementById('sous')
 const addition = document.getElementById('plus')
 const multiplication = document.getElementById('multi')
 const division = document.getElementById('div')
+const fermer = document.getElementById('fermer')
 const operateur = document.getElementById('operateur')
 const operation = document.getElementById('operation')
 const operation2 = document.getElementById('operation2')
@@ -74,6 +75,11 @@ division.addEventListener('click', function(){
         }
     })
 })
+
+fermer.addEventListener('click', function(){
+    window.close();
+})
+
 
 function entrerNombre(){
     operation.style.display = 'flex'
