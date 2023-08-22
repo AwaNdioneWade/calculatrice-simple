@@ -1,0 +1,29 @@
+.programme{
+    background-color: pink;
+}
+#operateur{
+    cursor: pointer;
+}
+#operation, #operation2, #resultat{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+#operation button, #operation2 button{
+    width: 70px;
+    height: 40px;
+}
+#operation input, #operation2 input{
+    width: 220px;
+    height: 50px;
+}
+
+#operation #bouton, #operation2 #bouton2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+

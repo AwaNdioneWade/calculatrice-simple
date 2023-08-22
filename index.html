@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Font favicon -->
+            <link rel="icon" href="images/favicon.png">
+            <!-- bootstrap5 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+            <script src="https://kit.fontawesome.com/3e56bd9026.js" crossorigin="anonymous"></script>
+            <!-- Font Awesome5 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- button navbar -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+            <!-- tooltip -->
+            <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            </script>
+            <title>Calculatrice</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center my-5">
+        <div class="row">
+            <div class="col-12">
+               <h1>Ma calculatrice toute simple</h1> 
+            </div>
+        </div>
+        <div class="row my-5 programme p-5">
+            <div class="col-12 col-md-7 d-flex justify-content-end align-items-star">
+                <div class="row" id="operateur">
+                    <div class="col-12 my-4 d-flex flex-column"> 
+                        <p id="multi">1. Faire la multiplication de deux valeurs</p>                  
+                        <p id="sous">2 Faire la soustraction de deux valeurs</p>
+                        <p id="plus">3. Faire la somme de deux valeurs</p> 
+                        <p id="div">4. Faire le division de deux valeurs</p> 
+                        <p id="" class="text-center">5. Quitter</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="operation">
+                            <div id="input"><input placeholder="entrez le premier nombre" id="premierNombre"></div>
+                            <div id="bouton">
+                                <button id="boutonEntrez">Entrer</button>
+                                <button id="boutonQuitter">Quitter</button>
+                            </div>
+                        </div>
+                        <div id="operation2">
+                            <div id="input2"><input placeholder="entrez le deuxiéme nombre" id="deuxiemeNombre"></div>
+                            <div id="bouton2">
+                                <button id="boutonEntrez2">Entrer</button>
+                                <button id="boutonQuitter2">Quitter</button>
+                            </div>
+                        </div>
+                        <div id="resultat">
+                            <div><h1 id="texte"></h1></div>
+                            <div id="bouton">
+                                <button id="boutonQuitter3">Quitter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="calculatrice.png">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
