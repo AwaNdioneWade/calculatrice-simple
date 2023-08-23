@@ -78,6 +78,7 @@ division.addEventListener('click', function(){
 
 fermer.addEventListener('click', function(){
     window.close();
+    console.log("test");
 })
 
 
